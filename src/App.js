@@ -11,7 +11,6 @@ import {
   sendEmailVerification,
   GoogleAuthProvider,
   signInWithPopup,
-  FacebookAuthProvider,
   TwitterAuthProvider,
   fetchSignInMethodsForEmail,
   GithubAuthProvider,
@@ -78,11 +77,6 @@ export class App extends Component {
     const provider = new TwitterAuthProvider();
     this.handleProvider("Twitter", provider);
   };
-
-  // facebookHandler = () => {
-  //   var provider = new FacebookAuthProvider();
-  //   this.handleProvider("Facebook", provider);
-  // };
 
   gitHubHandler = () => {
     var provider = new GithubAuthProvider();
@@ -179,7 +173,6 @@ export class App extends Component {
             switch={this.pageSwitchHandler}
             register={this.registrationHandler}
             google={this.googleHandler}
-            // facebook={this.facebookHandler}
             twitter={this.twitterHandler}
             gitHub={this.gitHubHandler}
           />

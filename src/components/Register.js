@@ -43,14 +43,7 @@ export default function Register(props) {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           />
-          {/* <FaFacebookF
-            size={34}
-            color="#1877F2"
-            style={iconStyle}
-            onClick={props.facebook}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          /> */}
+
           <FaTwitter
             size={34}
             color="#1DA1F2"
